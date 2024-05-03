@@ -1,13 +1,20 @@
-# def factor(n):
-# total = 5
-#     # total = 1
-#     # while n > 0:
-#     #     total *= n
-#     #     n -= 1
-# print(factor(7))
+def factor(num):
+  total = 1
+  # while num > 0:
+  #   total *= num
+  #   num -= 1
+
+  for value in range(num, 1, -1):
+    total *= value
+  
+  return total
+
 
 def factor_r(num):
-    if num == 1:
-        return 1
-    
-    return num * factor_r(num - 1)
+  if num == 1:
+    return 1
+  
+  return num * factor_r(num - 1)
+
+print(factor(5))
+print(factor_r(5))
