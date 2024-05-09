@@ -1,1 +1,3 @@
-deposito (+), 345.0
+Deposito (+), 999.0
+Deposito (+), 1000.0
+Saque (-), 999.0
